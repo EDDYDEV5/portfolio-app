@@ -11,7 +11,7 @@ const SocialLinks = () => {
                 <><FaLinkedin size={30} />
                 linkedin </>
               ),  
-        href: 'https://https://www.linkedin.com/in/cletus-obosi-ab2382262',
+        href: 'https://www.linkedin.com/in/cletus-obosi-ab2382262',
                 },
 
                 {
