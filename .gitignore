@@ -1,7 +1,4 @@
 *.git
-*.cjs
-*.js
-*.json
 logs
 *.log
 npm-debug.log*
