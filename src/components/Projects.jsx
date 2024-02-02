@@ -31,7 +31,7 @@ const portfolios = [
 
 
   return (
-    <div name="projects" className=' bg-amber-600 w-full text-red-950 md:h-screen'>
+    <div name="projects" className=' bg-amber-600 w-full text-red-950 md:h-screen h-full'>
     <div className=' max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full'>
         <div className=' pb-8 text-center'>
             <p className=' capitalize font-bold text-4xl inline border-b-4 border-red-950 '>projects</p>
