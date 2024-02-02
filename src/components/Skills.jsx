@@ -44,10 +44,10 @@ const techs =
 
 
   return (
-    <div name="skills" className=' bg-amber-600 w-full h-screen'>
+    <div name="skills" className=' bg-amber-600 w-full h-fit'>
         
-<div className=' max-w-screen-lg mx-auto p-4 flex flex-col justify-center w-full h-screen text-red-950 text-center'>
-    <div>
+<div className=' max-w-screen-lg mx-auto p-4 flex flex-col justify-center w-full h-fit pt-20 text-red-950 text-center'>
+    <div className=' pt-20'>
         <p className=' text-4xl font-bold inline border-b-4 border-red-950 capitalize p-2'>skills</p>
     </div>
 
