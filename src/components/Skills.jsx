@@ -56,7 +56,7 @@ const techs =
     {techs.map(({id, src, title}) => (
  <div key={id} className=' shadow-md shadow-red-700 hover:scale-105 duration-200 py-2 rounded-lg'>
  <img src={src} alt="" className=' w-20 mx-auto' />
- <p className=' mt-4 text-lg font-bold'>{title}</p>
+ <p className=' mt-4 font-bold'>{title}</p>
 </div>
 
     ))}   
