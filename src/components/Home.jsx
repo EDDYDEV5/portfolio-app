@@ -30,7 +30,7 @@ const Home = () => {
                   {links.map(({ id, child, href, download }) => (
                     <li key={id}>
                       <a href={href} download={download} target="_blank"className=" flex flex-row">
-                        {child}<FiDownload size={20} className=' ml-2' />
+                        {child}<FiDownload size={20} className=' ml-2 mt-1' />
                       </a>
                     </li>
                   ))}
