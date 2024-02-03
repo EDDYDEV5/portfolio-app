@@ -57,7 +57,7 @@ const Navbar = () => {
           {links.map(({ id, link }) => (
             <li
               key={id}
-              className="cursor-pointer capitalize font-tektur text-4xl py-8 hover:text-yellow-500"
+              className="cursor-pointer capitalize font-tektur text-4xl m-5 hover:text-yellow-500 border-b-4 border-amber-600"
             >
               <Link
                 onClick={() => setNav(!nav)}
