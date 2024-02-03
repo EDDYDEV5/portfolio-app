@@ -6,7 +6,7 @@ const About = () => {
     <div name="about" className=' w-full h-fit  bg-amber-600 text-red-950 pt-20'>
     <div className=' max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-fit items-center'>
         <div className=' pb-8'>
-            <p className=' text-4xl font-bold text-center inline border-b-4 border-red-950'>About</p>
+            <p className='text-4xl font-bold text-center inline border-b-4 border-red-950'>About Me</p>
         </div>
         <p className='text-xl mt-6 tracking-wide'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic nam perferendis temporibus minima molestiae dolores laboriosam modi odio corrupti atque facilis explicabo ex asperiores iusto non odit, architecto assumenda ut Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo aspernatur accusantium, repellendus eos quidem iure fugit harum in et error eligendi ea 
         </p>

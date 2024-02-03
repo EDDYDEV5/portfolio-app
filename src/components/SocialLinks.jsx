@@ -4,6 +4,10 @@ import { HiOutlineMail,  } from 'react-icons/hi'
 import {BsTwitterX} from 'react-icons/bs'
 
 const SocialLinks = () => {
+  const getCurrentYear = () => {
+    return new Date().getFullYear();
+  };
+
     const links = [
         {
             id:1,
@@ -45,19 +49,18 @@ const SocialLinks = () => {
 
 
     return (
-    <div className=' flex-col'>
-<ul className='flex w-full justify-center px-4 bg-red-950 h-20 items-center border-t-4 border-emerald-50 text-xl'>
+    <div className=' flex-col h-36 bg-red-950'>
+<ul className='flex w-full justify-center px-4 py-5 items-center border-t-4 border-emerald-50 text-xl'>
 
 {links.map(({id, child, href}) => (
- <li key={id} className=' tracking-wide bg-red-950 text-sm px-5'>
+ <li key={id} className=' tracking-wide pt-2  text-sm px-5'>
  <a href={href} className='flex flex-col items-center w-full text capitalize font-tektur text-white '>
 {child}
 </a>
 </li>
 ) )}
-
-   
 </ul>
+<p className='text-white text-lg tracking-widest text-center pt-2'>&copy;Copyright-<span className='font-protestguerrilla'>EDDYDEV</span> {getCurrentYear()}</p>
     </div>
   )
 }
