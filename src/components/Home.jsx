@@ -14,7 +14,7 @@ const Home = () => {
 
   return (
     <>
-      <div name="home" className="h-fit w-full bg-amber-600 pt-8">
+      <div name="home" className="h-fit w-full bg-amber-600 pt-20">
         <div className="max-w-screen-lg mx-auto flex flex-col items-center justify-center h-screen px-4 md:flex-row">
           <div className=" flex flex-col justify-center h-full ">
             <h2 className=" text-4xl md:text-7xl font-tektur text-red-950 capitalize">
