@@ -29,7 +29,7 @@ const Navbar = () => {
   ];
 
   return (
-    <div className="flex justify-between items-center w-full h-20 px-4 text-white bg-red-950 fixed z-10 border-b-4 border-white">
+    <div className="flex justify-between items-center w-full h-20 px-4 text-white bg-slate-500 fixed z-10 border-b-4 border-amber-400">
       <div>
         <h1 className=" text-3xl font-protestguerrilla ml-2 text-white">EDDYDEV</h1>
       </div>
@@ -53,11 +53,11 @@ const Navbar = () => {
       </div>
 
       {nav && (
-        <ul className="flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-red-950">
+        <ul className="flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-gradient-to-tl from-slate-50 to-slate-400 text-slate-600">
           {links.map(({ id, link }) => (
             <li
               key={id}
-              className="cursor-pointer capitalize font-tektur text-4xl m-5 hover:text-yellow-500 border-b-4 border-amber-600"
+              className="cursor-pointer capitalize font-tektur text-4xl m-5 border-b-4 border-slate-600"
             >
               <Link
                 onClick={() => setNav(!nav)}

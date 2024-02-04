@@ -6,6 +6,7 @@ export default {
       fontFamily: {
         tektur: ['"Tektur"', "sans-serif"],
         protestguerrilla: ['"Protest Guerrilla"', "sans-serif"],
+        gelasio: ['"Gelasio"', "sans-serif"],
       },
     },
   },
