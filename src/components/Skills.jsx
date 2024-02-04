@@ -6,7 +6,6 @@ import reactimage from '../assets/reactimage.png'
 import tailwind from '../assets/tailwind.png'
 import github from '../assets/github.png'
 import { animate, motion } from 'framer-motion'
-import { duration } from '@mui/material'
 
 
 const Skills = () => {
