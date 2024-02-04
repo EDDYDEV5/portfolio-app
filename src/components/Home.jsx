@@ -14,7 +14,7 @@ const Home = () => {
 
   return (
     <>
-      <div name="home" className="h-fit w-full bg-gradient-to-bl from-slate-50 to-slate-400 pt-16">
+      <div name="home" className="h-fit w-full bg-gradient-to-bl from-slate-50 to-slate-400 pt-20">
         <div className="max-w-screen-lg mx-auto flex flex-col items-center justify-center h-screen px-4 md:flex-row">
           <div className=" flex flex-col justify-center h-full ">
             <h2 className=" text-5xl md:text-7xl font-tektur text-slate-600 capitalize">
