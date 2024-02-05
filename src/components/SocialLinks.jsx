@@ -54,7 +54,7 @@ const SocialLinks = () => {
 
 {links.map(({id, child, href}) => (
  <li key={id} className=' tracking-wide px-5'>
- <a href={href} className='flex flex-col items-center w-full text capitalize font-tektur text-white '>
+ <a href={href} className='flex flex-col items-center w-full text-sm capitalize font-tektur text-white '>
 {child}
 </a>
 </li>
