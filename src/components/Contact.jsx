@@ -13,7 +13,7 @@ const Contact = () => {
         <input type="text" required name='name' placeholder='Name' className=' text-xl bg-transparent border-b-4  text-white focus:outline-none capitalize border-slate-600 placeholder:text-slate-50'/>
         <input type="text" required name='email' placeholder='Email address' className=' text-xl my-8 bg-transparent  text-white focus:outline-none capitalize border-b-4 border-slate-600 placeholder:text-slate-50'/>
         <textarea  name="message"  placeholder='Message' className=' py-9 text-xl bg-transparent text-white focus:outline-none capitalize border-b-4  resize-none border-slate-600 placeholder:text-slate-50'></textarea>
-        <button className=' text-white capitalize text-lg bg-gradient-to-r from-amber-300 to-amber-500 px-6 py-3 my-8 mx-auto flex items-center rounded-md font-tektur tracking-wide'>get in touch</button>
+        <button className=' text-white capitalize text-lg bg-gradient-to-r from-amber-300 to-amber-500 px-6 py-3 my-8 mx-auto flex items-center rounded-md font-tektur tracking-wide'>let's talk</button>
     </form>
 </div>
 

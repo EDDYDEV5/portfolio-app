@@ -17,9 +17,9 @@ const Home = () => {
       <div name="home" className="h-fit w-full bg-gradient-to-bl from-slate-50 to-slate-400 pt-20">
         <div className="max-w-screen-lg mx-auto flex flex-col items-center justify-center h-screen px-4 md:flex-row">
           <div className=" flex flex-col justify-center h-full ">
-            <h2 className=" text-5xl md:text-7xl font-tektur text-slate-600 capitalize">
+            <h1 className=" mt-2 text-5xl md:text-7xl font-tektur text-slate-600 capitalize">
               hi, <br /> i'm cletus obosi
-            </h2>
+            </h1>
             <p className=" capitalize tracking-wide py-4 max-w-md text-slate-600 text-xl font-semibold">
               a dedicated and result oriented <br />frontend developer creating great
               user experience and responsive webistes.
