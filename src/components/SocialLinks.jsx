@@ -12,7 +12,7 @@ const SocialLinks = () => {
         {
             id:1,
               child: (
-                <><FaLinkedin size={30} />
+                <><FaLinkedin size={30} className=' m-1' />
                 linkedin </>
               ),  
         href: 'https://www.linkedin.com/in/cletus-obosi-ab2382262',
@@ -21,15 +21,16 @@ const SocialLinks = () => {
                 {
                     id:2,
           child: (
-                        <><FaGithub size={30} />
+                        <><FaGithub size={30} className=' m-1'/>
                         github </>
                       ),  
                 href: 'https://github.com/EDDYDEV5',
+               
                         },
                         {
                             id:3,
                               child: (
-                                <><HiOutlineMail size={30} />
+                                <><HiOutlineMail size={30} className=' m-1' />
                                 mail </>
                               ),  
                         href: 'mailto:cletusobosi5@gmail.com',
@@ -37,7 +38,7 @@ const SocialLinks = () => {
                                 {
                                     id:4,
                                       child: (
-                                        <><BsTwitterX size={30} />
+                                        <><BsTwitterX size={28} className=' m-1' />
                                         twitter </>
                                       ),  
                                 href: 'https://twitter.com/eddieobosi',

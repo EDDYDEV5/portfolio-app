@@ -1,37 +1,60 @@
 import React, { useState } from "react";
-import { FaBars, FaHome, FaTimes, FaFacebook } from "react-icons/fa";
+import { FaBars, FaHome, FaTimes, FaTools  } from "react-icons/fa";
 import { Link } from "react-scroll";
+import { IoPerson } from "react-icons/io5";
+import { AiFillProject } from "react-icons/ai";
+import { MdContactMail } from "react-icons/md";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
 
   const links = [
     {
-      id: 1,
-      link: "home",
-    },
-    {
-      id: 2,
-      link: "about",
-    },
-    {
-      id: 3,
-      link: "projects",
-    },
-    {
-      id: 4,
-      link: "skills",
-    },
-    {
-      id: 6,
-      link: "contact",
-    },
+      id:1,
+        child: (
+          <><FaHome size={30} className=' m-1' />
+          Home </>
+        ),
+        link: "home"
+          },
+          {
+            id:2,
+              child: (
+                <><IoPerson size={30} className=' m-1' />
+                About </>
+              ), 
+              link: "about" 
+                },
+                {
+                  id:3,
+                    child: (
+                      <><AiFillProject size={30} className=' m-1' />
+                      Projects </>
+                    ), 
+                    link: "projects" 
+                      },
+                      {
+                        id:4,
+                          child: (
+                            <><FaTools size={30} className=' m-1' />
+                            Skills </>
+                          ), 
+                          link: "skills" 
+                            },
+                            {
+                              id:5,
+                                child: (
+                                  <><MdContactMail size={30} className=' m-1' />
+                                  Contact </>
+                                ), 
+                                link: "contact" 
+                                  },
   ];
 
   return (
-    <div className="flex justify-between items-center w-full h-20 px-4 text-white bg-slate-500 fixed z-10 border-b-4 border-amber-400">
+    <div className="flex justify-between items-center w-full h-20 px-4 text-white  bg-slate-500 fixed z-10 border-b-4  border-amber-400">
       <div>
-        <h1 className=" text-3xl font-protestguerrilla ml-2 text-white">EDDYDEV</h1>
+        <h1 className=" text-3xl font-protestguerrilla ml-2 ">EDDYDEV</h1>
       </div>
       <ul className=" hidden md:flex">
         {links.map(({ id, link }) => (
@@ -53,24 +76,30 @@ const Navbar = () => {
       </div>
 
       {nav && (
-        <ul className="flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-gradient-to-tl from-slate-50 to-slate-400 text-slate-600">
-          {links.map(({ id, link }) => (
+        <ul className="flex flex-col justify-center absolute top-0 left-0 w-full h-screen bg-gradient-to-tl from-slate-50 to-slate-400 text-slate-600">
+          {links.map(({ id, child, link }) => (
             <li
               key={id}
-              className="cursor-pointer capitalize font-tektur text-4xl m-5 border-b-4 border-slate-600"
+              className="cursor-pointer capitalize font-tektur text-4xl m-5 flex justify-center items-center"
             >
               <Link
                 onClick={() => setNav(!nav)}
                 to={link}
                 smooth
                 duration={600}
+                className="flex"
               >
-                {link}
+                {child}
+    
               </Link>
+
             </li>
+            
+
           ))}
         </ul>
       )}
+      
     </div>
   );
 };

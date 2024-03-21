@@ -7,7 +7,7 @@ const Home = () => {
     {
       id: 1,
       child: <>resume </>,
-      href: "/ridwan-afolabi-resume (1).pdf",
+      href: "/CletusObosiResume (1)",
       download: true,
     },
   ];
