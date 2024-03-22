@@ -28,7 +28,7 @@ const Home = () => {
     <>
       <div
         name="home"
-        className="h-fit w-full  pt-20 bg-orange-50 "
+        className="h-fit w-full  pt-20 bg-white "
       >
           
         <div className="max-w-screen-lg mx-auto flex flex-col items-center justify-center h-screen text-orange-600 px-4 md:flex-row">
