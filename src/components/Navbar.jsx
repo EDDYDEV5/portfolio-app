@@ -52,7 +52,7 @@ const Navbar = () => {
   ];
 
   return (
-    <div className="flex justify-between items-center w-full h-20 px-4 text-white  bg-slate-500 fixed z-10 border-b-4  border-amber-400">
+    <div className="flex justify-between items-center w-full h-20 px-4b text-yellow-500 bg-green-800 fixed z-10 border-b-4  border-yellow-500">
       <div>
         <h1 className=" text-3xl font-protestguerrilla ml-2 ">EDDYDEV</h1>
       </div>
