@@ -47,7 +47,7 @@ const Projects = () => {
   return (
     <div
       name="projects"
-      className=" bg-orange-50 w-full text-orange-600 md:h-fit pt-20 h-full"
+      className=" bg-white w-full text-orange-400 md:h-fit pt-20 h-full"
     >
       <div className=" max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-fit">
         
@@ -79,11 +79,11 @@ const Projects = () => {
              <Slide>
             <div
               key={id}
-              className=" shadow-md shadow-orange-600 rounded-lg border-orange-600 border-4 bg-orange-100 "
+              className=" shadow-md shadow-orange-400 rounded-lg bg-orange-00 border-orange-50 border-4 "
 
             >
              
-              <img src={src} alt="" className="px-2 py-2 h-44 w-full" />
+              <img src={src} alt="" className=" h-44 w-full rounded-md"  />
               
               <div className="flex-col items-center justify-center font-bold text-lg text-center">
                 <h1 className=" font-inter font-bold px-5 tracking-wide">Featured Project 

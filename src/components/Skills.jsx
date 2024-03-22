@@ -54,7 +54,7 @@ const techs =
 
 
   return (
-    <div name="skills" className='bg-orange-50 w-full text-orange-600 h-fit'>
+    <div name="skills" className=' bg-white w-full text-orange-400 h-fit'>
         
 <div className=' max-w-screen-lg mx-auto p-4 flex flex-col justify-center w-full h-fit pt-20  text-center'>
     <motion.div className=' pt-20'
@@ -80,7 +80,7 @@ const techs =
 
     {techs.map(({id, src, title}) => (
         <Slide>
- <div key={id} className=' shadow-md  py-2 shadow-orange-600 rounded-lg border-orange-600 border-4 h-44 bg-orange-100' >
+ <div key={id} className=' flex flex-col justify-center items-center shadow-md  py-2 shadow-orange-400 rounded-lg border-orange-50 border-4 h-44 bg-orang' >
  <img src={src} alt="" className=' w-20 mx-auto' />
  <p className=' mt-4 font-inter font-bold'>{title}</p>
  

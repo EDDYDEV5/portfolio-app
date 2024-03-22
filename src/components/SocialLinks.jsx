@@ -50,7 +50,7 @@ const SocialLinks = () => {
 
 
     return (
-    <div className=' flex-col h-36 bg-orange-500'>
+    <div className=' flex-col h-36 bg-orange-400'>
 <ul className='flex w-full justify-center px-4 py-5 items-center text-xl'>
 
 {links.map(({id, child, href}) => (
