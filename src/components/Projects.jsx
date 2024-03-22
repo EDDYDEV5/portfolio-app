@@ -92,7 +92,7 @@ const Projects = () => {
                 
                 <div className="flex ">
                 
-                <div className="w-1/2 py-2 m-4  cursor-pointer hover: rounded flex flex-col justify-center"><a href={href} target="blank" 
+                <div className="w-1/2 py-2 m-4  cursor-pointer hover: rounded flex flex-col items-center"><a href={href} target="blank" 
                 >
                   <BiLinkExternal size={28} />
                   <span>Demo</span></a>
