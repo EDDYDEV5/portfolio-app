@@ -52,7 +52,7 @@ const Navbar = () => {
   ];
 
   return (
-    <div className="flex justify-between items-center w-full h-20 px-4b text-yellow-500 bg-blue-950 fixed z-10 border-b-  border-white-500">
+    <div className="flex justify-between items-center w-full h-20 px-4b text-white bg-orange-600  fixed z-10 border-b-  border-white-500">
       <div>
         <h1 className=" text-3xl font-protestguerrilla ml-2 ">EDDYDEV</h1>
       </div>
@@ -60,7 +60,7 @@ const Navbar = () => {
         {links.map(({ id, link }) => (
           <li
             key={id}
-            className=" text-xl px-5 cursor-pointer capitalize font-tektur font-bold  hover:text-yellow-400 duration-200 tracking-wide hover:scale-125"
+            className=" text-xl px-5 cursor-pointer capitalize font-tektur font-bold  hover:text-white duration-200 tracking-wide hover:scale-125"
           >
             <Link to={link} smooth duration={600}>
               {link}
@@ -70,13 +70,13 @@ const Navbar = () => {
       </ul>
       <div
         onClick={() => setNav(!nav)}
-        className="text-4xl cursor-pointer z-10 pr-4 md:hidden text-white"
+        className="text-4xl cursor-pointer z-10 pr-4 md:hidden "
       >
         {nav ? <FaTimes size={30} /> : <FaBars size={30} />}
       </div>
 
       {nav && (
-        <ul className="flex flex-col justify-center absolute top-0 left-0 w-full h-screen bg-gradient-to-tl from-slate-50 to-slate-400 text-slate-600">
+        <ul className="flex flex-col justify-center absolute top-0 left-0 w-full h-screen bg-orange-600 text-white">
           {links.map(({ id, child, link }) => (
             <li
               key={id}

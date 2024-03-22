@@ -2,18 +2,18 @@ import React from 'react'
 
 const Contact = () => {
   return (
-    <div name="contact" className=' w-full h-fit bg-gradient-to-bl from-slate-50 to-slate-400 text-red-950 p-4'>
+    <div name="contact" className=' w-full h-fit bg-orange-50 text-orange-600 p-4'>
         <div className=' flex flex-col p-4 justify-center max-w-screen-lg mx-auto h-fit'>
-            <div className=' pt-20 text-center font-gelasio'>
-                <p className=' text-slate-600 font-bold text-4xl inline border-b-4 border-slate-600 capitalize'>contact</p>
-                <p className=' text-xl py-6 capitalize text-slate-600'>got an idea? lets talk</p>
+            <div className=' pt-20 text-center '>
+                <p className='  font-semibold font-playfair text-4xl inline '>Contact</p>
+                <p className=' text-xl py-6 capitalize font-inter '>got an idea? lets talk</p>
             </div>
 <div className='flex justify-center items-center text-red-950 font-gelasio'>
     <form action="https://formspree.io/f/xnqepdqy" method='POST' className=' flex flex-col w-full md:w-1/2'>
-        <input type="text" required name='name' placeholder='Name' className=' text-xl bg-transparent border-b-4  text-white focus:outline-none capitalize border-slate-600 placeholder:text-slate-50'/>
-        <input type="text" required name='email' placeholder='Email address' className=' text-xl my-8 bg-transparent  text-white focus:outline-none capitalize border-b-4 border-slate-600 placeholder:text-slate-50'/>
-        <textarea  name="message"  placeholder='Message' className=' py-9 text-xl bg-transparent text-white focus:outline-none capitalize border-b-4  resize-none border-slate-600 placeholder:text-slate-50'></textarea>
-        <button className=' text-white capitalize text-lg bg-gradient-to-r from-amber-300 to-amber-500 px-6 py-3 my-8 mx-auto flex items-center rounded-md font-tektur tracking-wide'>let's talk</button>
+        <input type="text" required name='name' placeholder='Name' className=' text-xl bg-transparent border-b-4  text-black focus:outline-none capitalize  border-orange-600 '/>
+        <input type="text" required name='email' placeholder='Email address' className=' text-xl my-8 bg-transparent  text-black focus:outline-none border-b-4 border-orange-600 placeholder:text-slate-00'/>
+        <textarea  name="message"  placeholder='Message' className=' py-9 text-xl bg-transparent text-black focus:outline-none resize-none border-b-4 border-orange-600 '></textarea>
+        <button className='text-lg bg-orange-600 text-white px-6 py-3 my-8 mx-auto flex items-center rounded-md font-tektur tracking-wide'>Get In Touch </button>
     </form>
 </div>
 
