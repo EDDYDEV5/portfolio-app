@@ -4,6 +4,8 @@ export default {
   theme: {
     extend: {
       fontFamily: {
+        inter: ['"Inter"', "sans-serif"],
+        playfair: ['"Playfair Display SC", "sans-serif"'],
         tektur: ['"Tektur"', "sans-serif"],
         protestguerrilla: ['"Protest Guerrilla"', "sans-serif"],
         gelasio: ['"Gelasio"', "sans-serif"],
