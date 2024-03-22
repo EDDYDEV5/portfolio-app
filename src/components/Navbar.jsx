@@ -60,7 +60,7 @@ const Navbar = () => {
         {links.map(({ id, link }) => (
           <li
             key={id}
-            className=" text-xl px-5 cursor-pointer capitalize font-tektur font-bold  hover:text-white duration-200 tracking-wide hover:scale-125"
+            className=" text-xl px-5 cursor-pointer capitalize font-inter font-bold  hover:text-white duration-200 tracking-wide hover:scale-125"
           >
             <Link to={link} smooth duration={600}>
               {link}
@@ -80,7 +80,8 @@ const Navbar = () => {
           {links.map(({ id, child, link }) => (
             <li
               key={id}
-              className="cursor-pointer capitalize font-tektur text-4xl m-5 flex justify-center items-center"
+              className="cursor-pointer capitalize font-tektur
+               text-4xl m-5 flex justify-center items-center"
             >
               <Link
                 onClick={() => setNav(!nav)}
