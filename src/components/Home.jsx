@@ -16,9 +16,9 @@ const Home = () => {
     <>
       <div
         name="home"
-        className="h-fit w-full  pt-20 bg-gradient-to-tr bg-green-800 to-purple-400 "
+        className="h-fit w-full  pt-20 bg-gradient-to-tr bg-yellow-500 to-"
       >
-        <div className="max-w-screen-lg mx-auto flex flex-col items-center justify-center h-screen text-yellow-500 px-4 md:flex-row">
+        <div className="max-w-screen-lg mx-auto flex flex-col items-center justify-center h-screen text-black px-4 md:flex-row">
           <div className=" flex flex-col justify-center h-full ">
             <h1 className=" mt-2 text-5xl md:text-7xl font-playfair font-bold font  capitalize">
               hi, <br /> i'm cletus obosi
@@ -29,7 +29,7 @@ const Home = () => {
               webistes.
             </p>
             <div>
-              <div className=" cursor-pointer text-xl capitalize flex  rounded-md text-green-800 justify-center items-center px-5 mt-2 w-40  hover:text- hover:bg-slate-100 py-3 delay-75 font-tektur bg-yellow-500">
+              <div className=" cursor-pointer text-xl capitalize flex  rounded-md text-yellow-500 justify-center items-center px-5 mt-2 w-40  hover:text- hover:bg-slate-100 py-3 delay-75 font-tektur bg-black">
                 <ul>
                   {links.map(({ id, child, href, download }) => (
                     <li key={id}>
