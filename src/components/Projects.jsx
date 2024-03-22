@@ -92,14 +92,14 @@ const Projects = () => {
                 
                 <div className="flex ">
                 
-                <div className="w-1/2 py-2 m-4 duration-200  cursor-pointer hover: rounded flex flex-col justify-center p-2"><a href={href} target="blank" 
+                <div className="w-1/2 py-2 m-4  cursor-pointer hover: rounded flex flex-col justify-center px-9"><a href={href} target="blank" 
                 >
                   <BiLinkExternal size={28} />
                   <span>Demo</span></a>
                   
                 </div>
                 
-                <div className="w-1/2  px-6 py-2 m-4 duration-200  rounded flex flex-col items-center "><a href={code}><FaGithub size={28}/>
+                <div className="w-1/2  px-6 py-2 m-4 cursor-pointer rounded flex flex-col items-center "><a href={code}><FaGithub size={28}/>
                   <span>Code</span></a>
                 </div>
                 
