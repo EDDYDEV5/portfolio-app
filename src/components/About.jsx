@@ -9,7 +9,7 @@ const headVarient = {
 
 const About = () => {
   return (
-    <div name="about" className=" w-full h-fit bg-white  text-orange-400 pt-20">
+    <div name="about" className=" w-full h-fit bg-white  text-orange-400">
       <div className=" max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-screen items-center">
         <motion.div
           className=" pb-8"

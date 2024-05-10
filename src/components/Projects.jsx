@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { FaGithub } from 'react-icons/fa'
 import { BiLinkExternal } from "react-icons/bi";
 import kfbar from '../assets/kfbar.png'
+import kendo from '../assets/kendo.png'
 import { Slide } from "./Slide";
 
 
@@ -24,7 +25,11 @@ const Projects = () => {
     },
     {
       id: 2,
-      src: design,
+      src: kendo,
+      code: 'https://github.com/EDDYDEV5/portfolio-app.git',
+      href: 'https://landing-page-peach-nine.vercel.app/',
+      title: 'Kendo solar'
+
     },
     {
       id: 3,
@@ -34,20 +39,13 @@ const Projects = () => {
       id: 4,
       src: design,
     },
-    {
-      id: 5,
-      src: design,
-    },
-    {
-      id: 6,
-      src: design,
-    },
+   
   ];
 
   return (
     <div
       name="projects"
-      className=" bg-white w-full text-orange-400 md:h-fit pt-20 h-full"
+      className=" bg-white w-full text-orange-400 md:h-fit  h-full pt-10"
     >
       <div className=" max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-fit">
         
@@ -75,7 +73,7 @@ const Projects = () => {
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8  px-4"
         >
        
-          {portfolios.map(({ id, src, href, code }) => (
+          {portfolios.map(({ id, src, href, code, title }) => (
              <Slide>
             <div
               key={id}
@@ -86,7 +84,7 @@ const Projects = () => {
               <img src={src} alt="" className=" h-44 w-full rounded-md"  />
               
               <div className="flex-col items-center justify-center font-bold text-lg text-center">
-                <h1 className=" font-inter font-bold px-5 tracking-wide">Featured Project 
+                <h1 className=" font-inter font-bold px-5 tracking-wide">{title} 
                 </h1>
                 
                 
