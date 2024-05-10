@@ -2,7 +2,7 @@ import React, { useRef, useEffect } from 'react'
 import { motion, useInView, useAnimation } from 'framer-motion'
 
 
-export const Slide = ({children, delay, className, variants}) => {
+export const Slide = ({children, delay, className}) => {
     const ref =useRef(null)
     const isInview = useInView(ref, { once: true });
       const controls = useAnimation();
