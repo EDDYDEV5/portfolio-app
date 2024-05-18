@@ -4,7 +4,8 @@ import { motion } from "framer-motion";
 import { FaGithub } from 'react-icons/fa'
 import { BiLinkExternal } from "react-icons/bi";
 import kfbar from '../assets/kfbar.png'
-import kendo from '../assets/kendo.png'
+import kendo from '../assets/landingpaged.jpg'
+import sureaza from '../assets/sureaza.jpg'
 import { Slide } from "./Slide";
 
 
@@ -33,7 +34,10 @@ const Projects = () => {
     },
     {
       id: 3,
-      src: design,
+      src: sureaza,
+      code: 'https://github.com/EDDYDEV5/Sure-aza.git',
+      href: 'https://sure-aza.vercel.app/',
+      title: 'Sureaza bank'
     },
     {
       id: 4,
