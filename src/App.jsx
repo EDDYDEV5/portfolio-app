@@ -11,14 +11,21 @@ function App() {
 
   return (
     <>
-  <Navbar />
-  <Home />
+    <div >
+    <Navbar />
+    <div className='mx-2 lg:mx-4'>
+    <Home />
+    
   <About />
  <Projects />
  <Skills />
  <Contact />
+ </div>
 
+ 
   <SocialLinks />
+    </div>
+ 
     </>
   )
 }

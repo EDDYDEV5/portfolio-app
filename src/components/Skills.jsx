@@ -54,10 +54,10 @@ const techs =
 
 
   return (
-    <div name="skills" className=' bg-white w-full text-orange-400 h-fit'>
+    <div name="skills" className=' bg-white w-full text-violet-400 h-fit'>
         
-<div className=' max-w-screen-lg mx-auto p-4 flex flex-col justify-center w-full h-fit pt-20  text-center'>
-    <motion.div className=' pt-20'
+<div className=' border border-violet-400 rounded my-2 p-4 flex flex-col justify-center  w-full h-fit pt-20  text-center'>
+    <motion.div className=''
      variants={headVarient}
      initial="hidden"
      whileInView="visible"
@@ -76,12 +76,12 @@ const techs =
     </motion.div>
 
 
-<div className=' w-full grid grid-cols-2 sm:grid-cols-3 gap-8 text-center py-8 px-12 sm:px-0 '>
+<div className=' w-full grid grid-cols-2 sm:grid-cols-3 gap-8 text-center py-8 px-1 sm:px-0 '>
 
     {techs.map(({id, src, title}) => (
         <Slide>
- <div key={id} className=' flex flex-col justify-center items-center shadow-md  py-2 shadow-orange-400 rounded-lg border-orange-50 border-4 h-44 bg-orang' >
- <img src={src} alt="" className=' w-20 mx-auto' />
+ <div key={id} className=' flex flex-col justify-center items-center shadow-md  py-2 rounded-lg border-violet-400 border-4 h-44 bg-violet-100' >
+ <img src={src} alt="" className=' w-20 ' />
  <p className=' mt-4 font-inter font-bold'>{title}</p>
  
 </div>

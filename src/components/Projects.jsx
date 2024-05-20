@@ -22,14 +22,16 @@ const Projects = () => {
       src: kfbar,
       href: 'https://kf-bar-and-food.vercel.app/',
       code: 'https://github.com/EDDYDEV5/kf_bar_and_food.git',
-      title: "Kf Food and Bar"
+      title: "Kf Food and Bar",
+      features: 'Kfbar and Food Bar is a restaurant mini e-commerce website showcasing their products built with Html, CSS, javaScript, React and Tailwind'
     },
     {
       id: 2,
       src: kendo,
       code: 'https://github.com/EDDYDEV5/portfolio-app.git',
       href: 'https://landing-page-peach-nine.vercel.app/',
-      title: 'Kendo solar'
+      title: 'Kendo solar',
+      features: 'A landing page that showcases  features and services offered by Kendo Solar Nigeria Ltd built with Html, CSS, javaScript, React and Tailwind'
 
     },
     {
@@ -37,11 +39,13 @@ const Projects = () => {
       src: sureaza,
       code: 'https://github.com/EDDYDEV5/Sure-aza.git',
       href: 'https://sure-aza.vercel.app/',
-      title: 'Sureaza bank'
+      title: 'Sureaza Bank',
+      features: 'A Landing Page of Sureaza Bank a modern bank with a swift payment method built with Html, CSS, javaScript, React and Tailwind'
     },
     {
       id: 4,
       src: design,
+      title: '#Coming Soon'
     },
    
   ];
@@ -49,9 +53,9 @@ const Projects = () => {
   return (
     <div
       name="projects"
-      className=" bg-white w-full text-orange-400 md:h-fit  h-full pt-10"
+      className=" bg-white w-full text-violet-400 md:h-fit  h-full"
     >
-      <div className=" max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-fit">
+      <div className="  border border-violet-400 rounded my-2 flex flex-col justify-center w-full h-fit">
         
         <motion.div className=" pb-10 text-center"  
       variants={headVarient}
@@ -74,22 +78,23 @@ const Projects = () => {
         </motion.div>
         
         
-        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8  px-4"
+        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-4 pb-6"
         >
        
-          {portfolios.map(({ id, src, href, code, title }) => (
+          {portfolios.map(({ id, src, href, code, title, features }) => (
              <Slide>
             <div
               key={id}
-              className=" shadow-md shadow-orange-400 rounded-lg bg-orange-00 border-orange-50 border-4 "
+              className="  rounded bg-violet-100 border-violet-400 border-4"
 
             >
              
-              <img src={src} alt="" className=" h-44 w-full rounded-md"  />
+              <img src={src} alt="" className=" h-44 w-full rounded-md p-1"  />
               
-              <div className="flex-col items-center justify-center font-bold text-lg text-center">
-                <h1 className=" font-inter font-bold px-5 tracking-wide">{title} 
+              <div className="flex-col items-center justify-center font-bold text-lg text-center py-2 bg-violet-100">
+                <h1 className=" font-inter font-bold">{title} 
                 </h1>
+                <p className=" text-gray-600 px-4">{features}</p>
                 
                 
                 <div className="flex ">

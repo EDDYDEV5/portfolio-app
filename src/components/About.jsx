@@ -9,10 +9,10 @@ const headVarient = {
 
 const About = () => {
   return (
-    <div name="about" className=" w-full h-fit bg-white  text-orange-400">
-      <div className=" max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-screen items-center">
+    <div name="about" className=" w-full h-fit bg-white  text-violet-400">
+      <div className=" border border-violet-400 rounded my-2  flex flex-col justify-cente w-full h-full items-center backdrop-filter">
         <motion.div
-          className=" pb-8"
+          className=" pb-6"
           variants={headVarient}
           initial="hidden"
           whileInView="visible"
@@ -23,17 +23,17 @@ const About = () => {
             type: "spring",
             duration: 0.2,
             delay: 0.2,
-            damping: 8,
+            damping: 5,
             stiffness: 50,
           }}
         >
-          <p className="text-4xl font-bold text-center inline font-playfair ">
+          <p className="text-4xl font-bold text-center whitespace-break-spaces inline font-playfair ">
             about me
           </p>
         </motion.div>
 
         <Slide>
-          <p className="text-xl mt-6 tracking-wide font-inter capitalize font-bold text-gray-600">
+          <p className="text-lg  font-inter text-center capitalize font-semibold text-gray-600 pb-4 ">
             {" "}
             i'm cletus aneikan obosi a frontend web developer Proficient in
             HTML, CSS, JavaScript, React, and Tailwind CSS. With a sharp focus

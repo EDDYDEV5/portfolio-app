@@ -31,11 +31,11 @@ const Home = () => {
         className="h-fit w-full  pt-20 bg-white "
       >
           
-        <div className="max-w-screen-lg mx-auto flex flex-col items-center justify-center h-screen text-orange-400 px-4 md:flex-row">
+        <div className=" flex flex-col items-center justify-center lg:gap-4 xl:gap-6 h-screen text-violet-400 px-4 md:flex-row border border-violet-400 rounded ">
         
           <div className=" flex flex-col justify-center h-full ">
          
-            <motion.h1 className=" mt-2 text-5xl md:text-7xl font-playfair font-bold font"
+            <motion.h1 className=" mt-2 text-4xl md:text-7xl pt-5 font-playfair font-bold font"
             variants={headVarient}
             initial="hidden"
             animate="visible"
@@ -50,7 +50,7 @@ const Home = () => {
               hi, <br /> i'm cletus obosi
             </motion.h1>
            
-            <motion.p className=" capitalize tracking-wide py-4 max-w-md font-bold text-xl font-inter text-gray-600 "
+            <motion.p className=" capitalize tracking-wide py-4 max-w-md font-bold text-lg font-inter text-gray-600 "
             variants={headVarient}
             initial="hidden"
             animate="visible"
@@ -71,7 +71,7 @@ const Home = () => {
             
             <div>
             <Slide>
-              <div className=" cursor-pointer text-xl flex text-white  rounded-md justify-center items-center px-5 mt-2 w-40  hover: hover:bg-orange-100 hover:border-4 hover:border-orange-600 hover:text-orange-600 py-3 delay-75 font-gelasio bg-orange-400 font-bold">
+              <div className=" cursor-pointer text-xl flex text-white  rounded-md justify-center items-center px-5 mt-2 w-40  hover:bg-violet-100  hover:text-violet-600 py-3 delay-75 font-gelasio bg-violet-400 font-bold">
                 <ul>
                   {links.map(({ id, child, href, download }) => (
                     <li key={id}>
@@ -93,11 +93,11 @@ const Home = () => {
            
           </div>
          
-          <div className=" pb-3 ">
+          <div className=" pb-8 ">
             <img
               src={heroimage}
               alt="my hero profile"
-              className=" rounded-full mx-auto w-2/3 border-orange-400 border-4 md:w-full"
+              className=" rounded-full mx-auto w-2/3 border-violet-400 hover:border md:w-full mt-2"
             />
           </div>
         </div>
