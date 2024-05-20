@@ -72,17 +72,17 @@ const techs =
        stiffness: 50,
      }}
     >
-        <p className=' text-4xl font-playfair font-bold inline  p-2'>Skills</p>
+        <p className=' text-4xl font-bebas tracking-wider font-bold inline  p-2'>Skills</p>
     </motion.div>
 
 
-<div className=' w-full grid grid-cols-2 sm:grid-cols-3 gap-8 text-center py-8 px-1 sm:px-0 '>
+<div className=' w-40 sm:w-full grid  sm:grid-cols-2 md:grid-cols-3 gap-8 text-center py-8 mx-auto'>
 
     {techs.map(({id, src, title}) => (
         <Slide>
- <div key={id} className=' flex flex-col justify-center items-center shadow-md  py-2 rounded-lg border-violet-400 border-4 h-44 bg-violet-100' >
+ <div key={id} className=' flex flex-col justify-center items-center shadow-md  py-2 rounded-lg border-violet-400 border h-44 bg-violet-100' >
  <img src={src} alt="" className=' w-20 ' />
- <p className=' mt-4 font-inter font-bold'>{title}</p>
+ <p className=' text-gray-600 px-2 font-gelasio'>{title}</p>
  
 </div>
 </Slide>

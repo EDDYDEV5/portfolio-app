@@ -31,11 +31,11 @@ const Home = () => {
         className="h-fit w-full  pt-20 bg-white "
       >
           
-        <div className=" flex flex-col items-center justify-center lg:gap-4 xl:gap-6 h-screen text-violet-400 px-4 md:flex-row border border-violet-400 rounded ">
+        <div className=" h- flex flex-col items-center justify-center lg:justify-betwen lg:gap-4 xl:gap-6 text-violet-400 px-4 lg:flex-row border border-violet-400 rounded ">
         
-          <div className=" flex flex-col justify-center h-full ">
+          <div className=" flex flex-col lg:justify-center pt-6">
          
-            <motion.h1 className=" mt-2 text-4xl md:text-7xl pt-5 font-playfair font-bold font"
+            <motion.h1 className=" text-5xl md:text-7xl  font-bebas tracking-wider font-bold"
             variants={headVarient}
             initial="hidden"
             animate="visible"
@@ -50,7 +50,7 @@ const Home = () => {
               hi, <br /> i'm cletus obosi
             </motion.h1>
            
-            <motion.p className=" capitalize tracking-wide py-4 max-w-md font-bold text-lg font-inter text-gray-600 "
+            <motion.p className=" capitalize tracking-wide py-4 max-w-md font-medium text-lg font-gelasio text-gray-600 "
             variants={headVarient}
             initial="hidden"
             animate="visible"
@@ -71,18 +71,18 @@ const Home = () => {
             
             <div>
             <Slide>
-              <div className=" cursor-pointer text-xl flex text-white  rounded-md justify-center items-center px-5 mt-2 w-40  hover:bg-violet-100  hover:text-violet-600 py-3 delay-75 font-gelasio bg-violet-400 font-bold">
-                <ul>
+              <div className="  cursor-pointer text-xl flex text-white  rounded-md justify-center items-center px-5 mt-2 w-40  hover:bg-violet-100  hover:text-violet-600 py-3 delay-75 font-gelasio bg-violet-400 font-bold">
+                <ul className=" group">
                   {links.map(({ id, child, href, download }) => (
                     <li key={id}>
                       <a
                         href={href}
                         download={download}
                         target="_blank"
-                        className=" flex flex-row"
+                        className=" flex flex-row group"
                       >
                         {child}
-                        <FiDownload size={20} className=" ml-2 mt-1" />
+                        <FiDownload size={20} className=" ml-2 mt-1 group-hover:animate-bounce" />
                       </a>
                     </li>
                   ))}
@@ -97,7 +97,7 @@ const Home = () => {
             <img
               src={heroimage}
               alt="my hero profile"
-              className=" rounded-full mx-auto w-2/3 border-violet-400 hover:border md:w-full mt-2"
+              className=" rounded-full mx-auto w-64  border-violet-400 hover:border lg:w-full mt-2"
             />
           </div>
         </div>

@@ -12,7 +12,7 @@ const About = () => {
     <div name="about" className=" w-full h-fit bg-white  text-violet-400">
       <div className=" border border-violet-400 rounded my-2  flex flex-col justify-cente w-full h-full items-center backdrop-filter">
         <motion.div
-          className=" pb-6"
+          className=" py-6 "
           variants={headVarient}
           initial="hidden"
           whileInView="visible"
@@ -27,15 +27,15 @@ const About = () => {
             stiffness: 50,
           }}
         >
-          <p className="text-4xl font-bold text-center whitespace-break-spaces inline font-playfair ">
+          <p className="text-4xl font-bold text-center whitespace-break-spaces inline font-bebas tracking-widest  ">
             about me
           </p>
         </motion.div>
 
         <Slide>
-          <p className="text-lg px-2 font-inter text-center capitalize font-semibold text-gray-600 pb-4 ">
-            {" "}
-            i'm cletus aneikan obosi a frontend web developer Proficient in
+          <p className=" px-2 font-gelasio text-center  text-gray-800 pb-4
+           leading-8 max-w-screen-lg mx-auto">
+            I'm Cletus Aneikan Obosi a frontend web developer Proficient in
             HTML, CSS, JavaScript, React, and Tailwind CSS. With a sharp focus
             on creating websites that are responsive, scalable, captivating, and
             user-friendly. with the ability to turn ideas into reality through

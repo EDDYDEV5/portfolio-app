@@ -40,7 +40,7 @@ const Projects = () => {
       code: 'https://github.com/EDDYDEV5/Sure-aza.git',
       href: 'https://sure-aza.vercel.app/',
       title: 'Sureaza Bank',
-      features: 'A Landing Page of Sureaza Bank a modern bank with a swift payment method built with Html, CSS, javaScript, React and Tailwind'
+      features: 'A Landing Page of Sureaza Bank a modern bank with a swift payment method was built with Html, CSS, javaScript, React and Tailwind'
     },
     {
       id: 4,
@@ -57,7 +57,7 @@ const Projects = () => {
     >
       <div className="  border border-violet-400 rounded my-2 flex flex-col justify-center w-full h-fit">
         
-        <motion.div className=" pb-10 text-center"  
+        <motion.div className=" py-6 text-center"  
       variants={headVarient}
       initial="hidden"
       whileInView="visible"
@@ -72,41 +72,41 @@ const Projects = () => {
         stiffness: 50,
       }}
         >
-          <p className=" capitalize font-bold text-4xl inline font-playfair ">
+          <p className=" capitalize font-bold text-4xl inline font-bebas tracking-wider">
             projects
           </p>
         </motion.div>
         
         
-        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-4 pb-6"
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 px-4 pb-6 "
         >
        
           {portfolios.map(({ id, src, href, code, title, features }) => (
              <Slide>
             <div
               key={id}
-              className="  rounded bg-violet-100 border-violet-400 border-4"
+              className=" rounded bg-violet-100 border-violet-400 border shadow-md hover:brightness-90"
 
             >
              
-              <img src={src} alt="" className=" h-44 w-full rounded-md p-1"  />
-              
-              <div className="flex-col items-center justify-center font-bold text-lg text-center py-2 bg-violet-100">
-                <h1 className=" font-inter font-bold">{title} 
+              <img src={src} alt="" className=" sm:h-48 w-full rounded-md p-1 "/>
+              <div className="flex-col items-center justify-center text-lg text-center py-2 sm:h-72 ">
+                 
+                <h1 className=" font-bebas tracking-wider font-bold">{title} 
                 </h1>
-                <p className=" text-gray-600 px-4">{features}</p>
+                <p className=" font-gelasio leading-8 text-gray-600 px-4">{features}</p>
                 
                 
                 <div className="flex ">
                 
-                <div className="w-1/2 py-2 m-4  cursor-pointer hover: rounded flex flex-col items-center"><a href={href} target="blank" 
+                <div className="w-1/2 py-2 m-4  cursor-pointer hover: rounded flex flex-col font-gelasio items-center"><a href={href} target="blank" 
                 >
                   <BiLinkExternal size={28} />
                   <span>Demo</span></a>
                   
                 </div>
                 
-                <div className="w-1/2 py-2 m-4 cursor-pointer rounded flex flex-col items-center "><a href={code}><FaGithub size={28}/>
+                <div className="w-1/2 py-2 m-4 cursor-pointer rounded flex flex-col items-center font-gelasio "><a href={code}><FaGithub size={28}/>
                   <span>Code</span></a>
                 </div>
                 

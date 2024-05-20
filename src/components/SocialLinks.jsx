@@ -51,17 +51,17 @@ const SocialLinks = () => {
 
     return (
     <div className=' flex-col h-36 bg-violet-400'>
-<ul className='flex w-full justify-center px-4 py-5 items-center text-xl'>
+<ul className='flex w-full justify-center py-5 items-center text-xl'>
 
 {links.map(({id, child, href}) => (
- <li key={id} className=' tracking-wide px-5'>
- <a href={href} className='flex flex-col items-center w-full text-sm capitalize font-inter font-semibold text-white '>
+ <li key={id} className=' md:px-5 px-1'>
+ <a href={href} className='flex flex-col items-center w-full text-sm capitalize font-gelasio font-medium text-white '>
 {child}
 </a>
 </li>
 ) )}
 </ul>
-<p className='text-white text-lg tracking-widest text-center pt-2'>&copy;Copyright-<span className='font-protestguerrilla'>EDDYDEV</span> {getCurrentYear()}</p>
+<p className='text-white text-sm sm:text-lg tracking-widest text-center pt-2 px-1 whitespace-nowrap'>&copy;Copyright-<span className='font-protestguerrilla'>EDDYDEV</span> {getCurrentYear()}</p>
     </div>
   )
 }

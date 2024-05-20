@@ -11,42 +11,27 @@ const Navbar = () => {
   const links = [
     {
       id:1,
-        child: (
-          <><FaHome size={30} className=' m-1' />
-          Home </>
-        ),
+        title: 'Home',
         link: "home"
           },
           {
             id:2,
-              child: (
-                <><IoPerson size={30} className=' m-1' />
-                About </>
-              ), 
+            title: 'about',
               link: "about" 
                 },
                 {
                   id:3,
-                    child: (
-                      <><AiFillProject size={30} className=' m-1' />
-                      Projects </>
-                    ), 
+                  title: 'projects', 
                     link: "projects" 
                       },
                       {
                         id:4,
-                          child: (
-                            <><FaTools size={30} className=' m-1' />
-                            Skills </>
-                          ), 
+                        title: 'skills',
                           link: "skills" 
                             },
                             {
                               id:5,
-                                child: (
-                                  <><MdContactMail size={30} className=' m-1' />
-                                  Contact </>
-                                ), 
+                              title: 'contact',
                                 link: "contact" 
                                   },
   ];
@@ -60,7 +45,7 @@ const Navbar = () => {
         {links.map(({ id, link }) => (
           <li
             key={id}
-            className=" text-xl px-5 cursor-pointer uppercase font-inter font-bold  hover:text-gray-700 duration-200 tracking-wide hover:scale-125"
+            className=" text-xl px-5 cursor-pointer uppercase font-bebas tracking-widest font-bold  hover:text-gray-700 duration-200  hover:scale-125"
           >
             <Link to={link} smooth duration={600}>
               {link}
@@ -70,18 +55,18 @@ const Navbar = () => {
       </ul>
       <div
         onClick={() => setNav(!nav)}
-        className="text-4xl cursor-pointer z-10 pr-4 md:hidden "
+        className="text-4xl cursor-pointer z-10 pr-4 md:hidden"
       >
         {nav ? <FaTimes size={30} /> : <FaBars size={30} />}
       </div>
 
       {nav && (
         <ul className="flex flex-col justify-center absolute top-0 left-0 w-full h-screen bg-violet-400 text-white">
-          {links.map(({ id, child, link }) => (
+          {links.map(({ id, title, link }) => (
             <li
               key={id}
-              className="cursor-pointer capitalize font-tektur
-               text-4xl m-5 flex justify-center items-center hover:text-gray-700"
+              className=" border-b hover:border-l-4 hover:border-l-gray-600 cursor-pointer capitalize font-bebas
+               text-4xl my-5 mx-5 px-3 hover:text-gray-600"
             >
               <Link
                 onClick={() => setNav(!nav)}
@@ -90,7 +75,7 @@ const Navbar = () => {
                 duration={600}
                 className="flex"
               >
-                {child}
+                {title}
     
               </Link>
 
