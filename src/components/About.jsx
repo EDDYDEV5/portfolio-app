@@ -33,7 +33,7 @@ const About = () => {
         </motion.div>
 
         <Slide>
-          <p className="text-lg  font-inter text-center capitalize font-semibold text-gray-600 pb-4 ">
+          <p className="text-lg px-2 font-inter text-center capitalize font-semibold text-gray-600 pb-4 ">
             {" "}
             i'm cletus aneikan obosi a frontend web developer Proficient in
             HTML, CSS, JavaScript, React, and Tailwind CSS. With a sharp focus
