@@ -54,9 +54,9 @@ const techs =
 
 
   return (
-    <div name="skills" className=' bg-white w-full text-violet-400 h-fit'>
+    <div name="skills" className=' bg-white w-full text-secondary h-fit'>
         
-<div className=' border border-violet-400 rounded my-2 p-4 flex flex-col justify-center  w-full h-fit pt-20  text-center'>
+<div className=' border border-secondary rounded my-2 p-4 flex flex-col justify-center  w-full h-fit pt-20  text-center'>
     <motion.div className=''
      variants={headVarient}
      initial="hidden"
@@ -68,7 +68,7 @@ const techs =
        type: "spring",
        duration: 0.2,
        delay: 0.2,
-       damping: 8,
+       damping: 28,
        stiffness: 50,
      }}
     >
@@ -79,8 +79,8 @@ const techs =
 <div className=' w-40 sm:w-full grid  sm:grid-cols-2 md:grid-cols-3 gap-8 text-center py-8 mx-auto'>
 
     {techs.map(({id, src, title}) => (
-        <Slide>
- <div key={id} className=' flex flex-col justify-center items-center shadow-md  py-2 rounded-lg border-violet-400 border h-44 bg-violet-100' >
+        <Slide key={id}>
+ <div  className=' flex flex-col justify-center items-center shadow-md  py-2 rounded-lg border-secondary border h-44 bg-vi-100' >
  <img src={src} alt="" className=' w-20 ' />
  <p className=' text-gray-600 px-2 font-gelasio'>{title}</p>
  

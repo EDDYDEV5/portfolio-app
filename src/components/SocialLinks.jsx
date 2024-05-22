@@ -50,12 +50,12 @@ const SocialLinks = () => {
 
 
     return (
-    <div className=' flex-col h-36 bg-violet-400'>
+    <div className=' flex-col h-36 bg-secondary'>
 <ul className='flex w-full justify-center py-5 items-center text-xl'>
 
 {links.map(({id, child, href}) => (
  <li key={id} className=' md:px-5 px-1'>
- <a href={href} className='flex flex-col items-center w-full text-sm capitalize font-gelasio font-medium text-white '>
+ <a href={href} className='flex flex-col items-center w-full text-sm  capitalize font-gelasio font-medium text-white '>
 {child}
 </a>
 </li>

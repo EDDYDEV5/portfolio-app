@@ -53,9 +53,9 @@ const Projects = () => {
   return (
     <div
       name="projects"
-      className=" bg-white w-full text-violet-400 md:h-fit  h-full"
+      className=" bg-white w-full text-secondary md:h-fit  h-full"
     >
-      <div className="  border border-violet-400 rounded my-2 flex flex-col justify-center w-full h-fit">
+      <div className="  border border-secondary rounded my-2 flex flex-col justify-center w-full h-fit">
         
         <motion.div className=" py-6 text-center"  
       variants={headVarient}
@@ -68,7 +68,7 @@ const Projects = () => {
         type: "spring",
         duration: 0.2,
         delay: 0.2,
-        damping: 8,
+        damping: 28,
         stiffness: 50,
       }}
         >
@@ -82,14 +82,14 @@ const Projects = () => {
         >
        
           {portfolios.map(({ id, src, href, code, title, features }) => (
-             <Slide>
+             <Slide key={id}>
             <div
-              key={id}
-              className=" rounded bg-violet-100 border-violet-400 border shadow-md hover:brightness-90"
+              
+              className=" rounded bg-blue-1 border-secondary border shadow-md hover:brightness-90"
 
             >
              
-              <img src={src} alt="" className=" sm:h-48 w-full rounded-md p-1 "/>
+              <img src={src} alt="" className=" sm:h-48 w-full rounded-lg p-1  "/>
               <div className="flex-col items-center justify-center text-lg text-center py-2 sm:h-72 ">
                  
                 <h1 className=" font-bebas tracking-wider font-bold">{title} 

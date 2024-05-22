@@ -31,7 +31,7 @@ const Home = () => {
         className="h-fit w-full  pt-20 bg-white "
       >
           
-        <div className=" h- flex flex-col items-center justify-center lg:justify-betwen lg:gap-4 xl:gap-6 text-violet-400 px-4 lg:flex-row border border-violet-400 rounded ">
+        <div className=" h- flex flex-col items-center justify-center lg:justify-betwen lg:gap-4 xl:gap-6 text-secondary px-4 lg:flex-row border border-secondary rounded ">
         
           <div className=" flex flex-col lg:justify-center pt-6">
          
@@ -43,6 +43,7 @@ const Home = () => {
               type: "spring",
               duration: 0.2,
               delay: 0.2,
+              damping: 28,
               stiffness: 50,
             }}
             >
@@ -57,7 +58,7 @@ const Home = () => {
             transition = {{
               type: "spring",
               duration: 0.2,
-              
+              damping: 28,
               delay: 0.5,
               stiffness: 50,
             }}
@@ -71,7 +72,7 @@ const Home = () => {
             
             <div>
             <Slide>
-              <div className="  cursor-pointer text-xl flex text-white  rounded-md justify-center items-center px-5 mt-2 w-40  hover:bg-violet-100  hover:text-violet-600 py-3 delay-75 font-gelasio bg-violet-400 font-bold">
+              <div className="  cursor-pointer text-xl flex text-white  rounded-md justify-center items-center px-5 mt-2 w-40 hover:bg-blue-600 py-3 delay-75 font-gelasio bg-secondary font-bold">
                 <ul className=" group">
                   {links.map(({ id, child, href, download }) => (
                     <li key={id}>
@@ -97,7 +98,7 @@ const Home = () => {
             <img
               src={heroimage}
               alt="my hero profile"
-              className=" rounded-full mx-auto w-64  border-violet-400 hover:border lg:w-full mt-2"
+              className=" rounded-full mx-auto w-64  border-secondary hover:border lg:w-full mt-2"
             />
           </div>
         </div>

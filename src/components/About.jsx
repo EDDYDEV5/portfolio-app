@@ -9,8 +9,8 @@ const headVarient = {
 
 const About = () => {
   return (
-    <div name="about" className=" w-full h-fit bg-white  text-violet-400">
-      <div className=" border border-violet-400 rounded my-2  flex flex-col justify-cente w-full h-full items-center backdrop-filter">
+    <div name="about" className=" w-full h-fit bg-white  text-secondary">
+      <div className=" border border-secondary rounded my-2  flex flex-col justify-cente w-full h-full items-center">
         <motion.div
           className=" py-6 "
           variants={headVarient}
@@ -23,7 +23,7 @@ const About = () => {
             type: "spring",
             duration: 0.2,
             delay: 0.2,
-            damping: 5,
+            damping: 28,
             stiffness: 50,
           }}
         >

@@ -4,11 +4,13 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        inter: ['"Inter"', "sans-serif"],
         protestguerrilla: ['"Protest Guerrilla"', "sans-serif"],
         gelasio: ['"Gelasio"', "sans-serif"],
         bebas: ['"Bebas Neue"', "sans-serif"]
       },
+      colors:{
+        secondary: "#4169E1",
+      }
     },
   },
   plugins: [],
